@@ -24,6 +24,11 @@ Bienvenido a mi espacio de laboratorios prácticos y auditorías de infraestruct
 * **Metodología:** Configuración de arquitectura de red aislada en modo *Adaptador Solo-Anfitrión* (`192.168.56.0/24`) para evadir el aislamiento perimetral de routers hogareños. Auditoría profunda sobre un servidor Linux vulnerable a propósito (`192.168.56.101`).
 * **Resultado del Triage:** Identificación de un vector masivo de exposición perimetral. Documentación y desarrollo de planes de mitigación estratégica para vulnerabilidades de impacto máximo (CVSS 10.0), incluyendo la credencial por defecto en el servidor visual remoto (VNC Server 'password') y la detección de puertas traseras activas en servicios de comunicación (Bind Shell y UnrealIRCd Backdoors).
 
+### 🔹 3. Verificación de Evidencias y Explotación Manual (vsftpd 2.3.4)
+* **Archivo:** `Informe_Explotacion_Manual_vsftpd_FedericoFijtman.pdf`
+* **Metodología:** Análisis activo perimetral mediante el framework avanzado *Netcat* sobre el segmento aislado solo-anfitrión. Simulación manual del trigger de inyección en el servicio de transferencia de archivos (Puerto 21) para forzar la apertura del canal secundario de administración.
+* **Resultado de la Prueba de Concepto (PoC):** Conexión exitosa y toma de control directa sobre el puerto oculto `6200`. Verificación de compromiso perimetral absoluto al obtener una consola remota interactiva con identificador de privilegios de Administrador Supremo del sistema operativo (`uid=0(root)`), documentando la remediación de la vulnerabilidad crítica global CVE-2011-2523.
+
 ---
 
 ## 🎯 Objetivo Profesional
