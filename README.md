@@ -29,6 +29,11 @@ Bienvenido a mi espacio de laboratorios prácticos y auditorías de infraestruct
 * **Metodología:** Análisis activo perimetral mediante el framework avanzado *Netcat* sobre el segmento aislado solo-anfitrión. Simulación manual del trigger de inyección en el servicio de transferencia de archivos (Puerto 21) para forzar la apertura del canal secundario de administración.
 * **Resultado de la Prueba de Concepto (PoC):** Conexión exitosa y toma de control directa sobre el puerto oculto `6200`. Verificación de compromiso perimetral absoluto al obtener una consola remota interactiva con identificador de privilegios de Administrador Supremo del sistema operativo (`uid=0(root)`), documentando la remediación de la vulnerabilidad crítica global CVE-2011-2523.
 
+### 🔹 4. Auditoría de Exposición Automatizada y Conexión Reversa (Metasploit)
+* **Archivo:** `Informe_Explotacion_Automatizada_Metasploit_FedericoFijtman.pdf`
+* **Metodología:** Configuración del motor PostgreSQL e indexación global del vector CVE-2011-2523 en Metasploit Framework (MSFv6). Despliegue de una carga útil avanzada de conexión reversa (*Reverse Shell*) con Meterpreter para analizar la evasión de políticas y controles perimetrales.
+* **Resultado del Triage:** Mitigación de conflictos de red locales mediante depuración de sockets y hardware en el hipervisor. Obtención exitosa de una sesión interactiva persistente directamente en la memoria RAM del servidor objetivo (`192.168.56.101`), validando el compromiso absoluto del activo con privilegios máximos de administrador supremo (`uid=0(root)`).
+
 ---
 
 ## 🎯 Objetivo Profesional
