@@ -34,6 +34,11 @@ Bienvenido a mi espacio de laboratorios prácticos y auditorías de infraestruct
 * **Metodología:** Inicialización y verificación del motor PostgreSQL nativo e indexación global del vector CVE-2011-2523 en Metasploit Framework (MSFv6). Despliegue de una carga útil avanzada de conexión reversa (*Reverse Shell*) con Meterpreter para analizar la evasión de políticas y controles perimetrales.
 * **Resultado del Triage:** Mitigación de conflictos de red locales mediante depuración de sockets y hardware en el hipervisor. Obtención exitosa de una sesión interactiva persistente directamente en la memoria RAM del servidor objetivo (`192.168.56.101`), validando el compromiso absoluto del activo con privilegios máximos de administrador supremo.
 
+### 🔹 5. Auditoría de Inyección de Comandos y Restricción de Código Fuente (OWASP Top 10)
+* **Archivo:** `Informe_Inyeccion_Comandos_OWASP_FedericoFijtman.pdf`
+* **Metodología:** Análisis activo sobre el backend de una aplicación web corporativa (DVWA) bajo el estándar internacional OWASP Top 10 (A03:2021-Injection). Inspección de código fuente PHP para diagnosticar la ejecución insegura de la función nativa `shell_exec()` acoplada por concatenación directa a variables de entrada de usuario sin controles de sanitización.
+* **Resultado del Triage:** Explotación exitosa de la lógica defectuosa del formulario web mediante vectores con operadores separadores de instrucciones. Extracción del inventario completo de cuentas del sistema operativo (`/etc/passwd`) y despliegue de una carga útil para forzar una consola remota interactiva (*Reverse Shell*) vía Netcat bajo los privilegios del usuario de servicios web `www-data`.
+
 ---
 
 ## 🎯 Objetivo Profesional
