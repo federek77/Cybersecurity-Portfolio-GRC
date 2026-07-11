@@ -1,6 +1,6 @@
 # Portfolio Profesional: Gestión de Vulnerabilidades y Cumplimiento Técnico (GRC)
 
-Bienvenido a mi espacio de laboratorios prácticos y auditorías de infraestructura. Soy Federico Fijtman, Técnico Superior en Programación y Analista de Ciberseguridad certificado. Este repositorio reúne la documentación formal, reportes ejecutivos y matrices de riesgo derivados de mis simulaciones en entornos controlados, orientados estrictamente al rol de **Analista de Vulnerabilidades / GRC**.
+Bienvenido a mi espacio de laboratorios prácticos y auditorías de infraestructura. Soy Federico Fijtman, Técnico Superior en Programación y Analista de Ciberseguridad certificado. Este repositorio reúne la documentación formal, reportes ejecutivos y matrices de riesgo derivadas de mis simulaciones en entornos controlados, orientados estrictamente al rol de **Analista de Vulnerabilidades / GRC**.
 
 ---
 
@@ -32,7 +32,7 @@ Bienvenido a mi espacio de laboratorios prácticos y auditorías de infraestruct
 ### 🔹 4. Auditoría de Exposición Automatizada y Conexión Reversa (Metasploit)
 * **Archivo:** `Informe_Explotacion_Automatizada_Metasploit_FedericoFijtman.pdf`
 * **Metodología:** Inicialización y verificación del motor PostgreSQL nativo e indexación global del vector CVE-2011-2523 en Metasploit Framework (MSFv6). Despliegue de una carga útil avanzada de conexión reversa (*Reverse Shell*) con Meterpreter para analizar la evasión de políticas y controles perimetrales.
-* **Resultado del Triage:** Mitigación de conflictos de red locales mediante depuración de sockets y hardware en el hipervisor. Obtención exitosa de una sesión interactiva persistente directamente en la memoria RAM del servidor objetivo (`192.168.56.101`), validando el compromiso absoluto del activo con privilegios máximos de administrador supremo.
+* **Resultado del Triage:** Mitigación de conflictos de red locales mediante depuración de sockets y hardware en el hipervisor. Obtención exitosa de una sesión interactiva persistente directamente en la memoria RAM del servidor objetivo (`192.168.56.101`), validando el compromiso absoluto del activo con privilegios máximos de administrador (root).
 
 ### 🔹 5. Auditoría de Inyección de Comandos y Restricción de Código Fuente (OWASP Top 10)
 * **Archivo:** `Informe_Inyeccion_Comandos_OWASP_FedericoFijtman.pdf`
