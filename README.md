@@ -40,6 +40,12 @@ Bienvenido a mi espacio de laboratorios prácticos y auditorías de infraestruct
 * **Metodología:** Análisis activo sobre el backend de una aplicación web corporativa (DVWA) bajo el estándar internacional **OWASP Top 10 (A03:2021-Injection)**. Inspección de código fuente PHP para diagnosticar la ejecución insegura de la función nativa `shell_exec()` acoplada por concatenación directa a variables de entrada de usuario sin controles de sanitización ni validación (*input validation*).
 * **Resultado del Triage:** Explotación exitosa de la lógica defectuosa del formulario web mediante vectores con operadores separadores de instrucciones. Extracción del inventario completo de cuentas del sistema operativo (`/etc/passwd`) y despliegue de una carga útil para forzar una consola remota interactiva (*Reverse Shell*) vía Netcat bajo los privilegios del usuario de servicios web `www-data`.
 
+### 🔹 6. Análisis Dinámico de Seguridad (DAST) y Auditoría Web (OWASP ZAP)
+* **Archivo:** `Informe_Analisis_Dinamico_ZAP_FedericoFijtman.pdf`
+* **Metodología:** Despliegue de un análisis dinámico automatizado (DAST) mediante el motor **OWASP ZAP (v2.17.0)** e integración de Checkmarx sobre el perímetro web del activo `192.168.56.101:80`. Ejecución de fases consecutivas de indexación perimetral (*Spidering*) y escaneo activo bajo el estándar internacional de seguridad en aplicaciones web.
+* **Resultado del Triage:** Identificación de una superficie de riesgo crítica compuesta por 23 alertas de severidad Alta. El análisis de vulnerabilidades expuso configuraciones defectuosas de hardening, indexación abierta de directorios de administración y el uso de componentes de infraestructura obsoletos sin soporte técnico (**Apache 2.2.8** y el entorno de ejecución **PHP 5.2.4**), procediendo a documentar los vectores de remediación y la mitigación mediante encabezados HTTP defensivos (CSP y HSTS).
+  
+
 ---
 
 ## 🎯 Objetivo Profesional
